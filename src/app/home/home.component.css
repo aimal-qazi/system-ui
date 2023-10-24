@@ -1,0 +1,150 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.container .sideBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 20px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 6px 0px 18px 0px rgba(61, 84, 205, 0.09);
+  transition: all 0.3s ease;
+}
+.container .sideBar.active {
+  width: 0px;
+  padding: 20px 0;
+  overflow-x: hidden;
+}
+.container .sideBar .links {
+  width: 100%;
+  padding-top: 20px;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.container .sideBar .links ul li {
+  display: flex;
+  gap: 10px;
+  margin: 5px 0;
+  padding: 10px;
+  border-bottom: 1px solid #dbdcde;
+}
+.container .sideBar .links ul li .icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .sideBar .projects {
+  width: 100%;
+  height: 40%;
+}
+.container .sideBar .projects .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px 10px 20px;
+  border-bottom: 1px solid #dbdcde;
+  cursor: pointer;
+}
+.container .sideBar .projects .dropDown {
+  height: 89%;
+  overflow-y: auto;
+}
+.container .sideBar .projects ul {
+  height: 0;
+  overflow: hidden;
+  transition: height all 0.4s ease;
+}
+.container .sideBar .projects ul.active {
+  height: auto;
+}
+.container .sideBar .projects ul li {
+  margin: 30px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.container .sideBar .projects p {
+  color: #828282;
+  cursor: pointer;
+}
+.container .dashboard {
+  flex: 1;
+}
+.container .dashboard .header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background: #fff;
+  border-bottom: 2px solid #dbdcde;
+}
+.container .dashboard .header .profile-detail {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+}
+.container .dashboard .header .profile-detail .drop-down {
+  display: none;
+  position: absolute;
+  bottom: -135px;
+  right: 0;
+  width: 210px;
+  height: 140px;
+  padding: 35px 0;
+}
+.container .dashboard .header .profile-detail.active .drop-down {
+  display: block;
+}
+.container .dashboard .header .profile-detail .drop-down.active {
+  display: block;
+}
+.container .dashboard .header .profile-detail .drop-down .drop-down-data {
+  width: 100%;
+  height: 106px;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #dbdcde;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .dashboard .header .profile-detail .drop-down .drop-down-data .box {
+  cursor: pointer;
+  border-bottom: 1px solid #dbdcde;
+  display: flex;
+  padding: 15px 20px;
+  gap: 1rem;
+}
+.container .da .container .dashboard .header .profile-detail .img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container .dashboard .header .profile-detail .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.container .dashboard .header .humburger {
+  cursor: pointer;
+}
+.container .dashboard .header .humburger span {
+  width: 25px;
+  height: 2px;
+  background: #828282;
+  display: block;
+  margin: 5px 0;
+}

@@ -1,0 +1,176 @@
+<div class="container">
+  <div class="sideBar" [ngClass]="{ active: isSidebarHidden }">
+    <img src="../../assets/logo.png" alt="" />
+    <div class="links">
+      <ul>
+        <li>
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20.29 7.00048L14.73 2.89048C13.1036 1.70317 10.8964 1.70317 9.27 2.89048L3.72 7.00048C2.64544 7.77462 2.0061 9.01612 2 10.3405V17.7705C2.06002 20.1637 4.04665 22.0564 6.44 22.0005H17.56C19.9534 22.0564 21.94 20.1637 22 17.7705V10.3305C21.9914 9.01185 21.3567 7.77576 20.29 7.00048ZM20.5 17.7705C20.4404 19.3354 19.1251 20.5568 17.56 20.5005H6.44C4.87698 20.5512 3.56502 19.333 3.5 17.7705V10.3405C3.50534 9.4904 3.91817 8.69448 4.61 8.20048L10.16 4.10048C11.2561 3.30006 12.7439 3.30006 13.84 4.10048L19.39 8.21048C20.0812 8.6959 20.4948 9.48583 20.5 10.3305V17.7705ZM7.5 15.7505H16.5C16.9142 15.7505 17.25 16.0863 17.25 16.5005C17.25 16.9147 16.9142 17.2505 16.5 17.2505H7.5C7.08579 17.2505 6.75 16.9147 6.75 16.5005C6.75 16.0863 7.08579 15.7505 7.5 15.7505Z"
+                fill="#828282"
+              />
+            </svg>
+          </div>
+          <p>Home</p>
+        </li>
+        <li>
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="19"
+              height="20"
+              viewBox="0 0 19 20"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.1066 13.48C17.6623 13.1 17.4065 12.5446 17.4066 11.96V7.14C17.4066 3.19 13.8266 0 9.40657 0C4.98657 0 1.40657 3.19 1.40657 7.14V11.96C1.40661 12.5446 1.15084 13.1 0.706568 13.48C-0.803432 14.83 0.266568 17.13 2.40657 17.13H6.20657C6.69141 18.4804 7.97177 19.3811 9.40657 19.3811C10.8414 19.3811 12.1217 18.4804 12.6066 17.13H16.4066C18.5466 17.13 19.6166 14.83 18.1066 13.48ZM9.40657 17.88C8.81136 17.8778 8.25048 17.601 7.88657 17.13H10.8866C10.5342 17.5936 9.98876 17.87 9.40657 17.88ZM16.4166 15.63C16.7801 15.6629 17.1263 15.468 17.2866 15.14C17.3644 14.9424 17.2935 14.7173 17.1166 14.6C16.3631 13.9279 15.9275 12.9696 15.9166 11.96V7.14C15.9166 4.03 12.9966 1.5 9.41657 1.5C5.83657 1.5 2.91657 4.03 2.91657 7.14V11.96C2.9056 12.9696 2.47001 13.9279 1.71657 14.6C1.53589 14.7144 1.46065 14.9401 1.53657 15.14C1.69686 15.468 2.04301 15.6629 2.40657 15.63H16.4166Z"
+                fill="#828282"
+              />
+            </svg>
+          </div>
+          <p>Notification</p>
+        </li>
+        <li>
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="21"
+              viewBox="0 0 15 21"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M14.82 3.53C14.8206 4.3736 14.5191 5.18953 13.97 5.83L12.14 7.92C11.0182 9.23302 11.0182 11.167 12.14 12.48L13.93 14.62C14.8145 15.6682 15.0096 17.1347 14.43 18.3777C13.8503 19.6207 12.6015 20.4138 11.23 20.41H3.52002C1.57436 20.4045 1.20302e-05 18.8257 1.98373e-05 16.88C-0.00278402 16.0516 0.291725 15.2497 0.83002 14.62L2.64002 12.46C3.73818 11.1459 3.73818 9.23411 2.64002 7.92L0.83002 5.76C0.291725 5.13032 -0.00278402 4.3284 1.98373e-05 3.5C0.0164487 1.56605 1.58601 0.00540902 3.52002 0H11.3C13.2457 0.0055118 14.82 1.58433 14.82 3.53ZM12.86 15.51L11.08 13.38C9.50871 11.5488 9.50447 8.84616 11.07 7.01L12.87 4.92C13.2068 4.5354 13.3916 4.04118 13.39 3.53C13.4013 2.3596 12.4702 1.39729 11.3 1.37H3.52002C2.69221 1.37037 1.93958 1.85034 1.5901 2.60076C1.24061 3.35119 1.35758 4.23614 1.89002 4.87L3.71002 7.03C5.24196 8.85817 5.24196 11.5218 3.71002 13.35L1.89002 15.51C1.35758 16.1439 1.24061 17.0288 1.5901 17.7792C1.93958 18.5297 2.69221 19.0096 3.52002 19.01H11.23C12.4064 19.01 13.36 18.0564 13.36 16.88C13.3642 16.378 13.1866 15.8914 12.86 15.51Z"
+                fill="#828282"
+              />
+              <path
+                d="M10.2 16.46H4.62004C4.26827 16.4177 4.00355 16.1193 4.00355 15.765C4.00355 15.4107 4.26827 15.1123 4.62004 15.07H10.2C10.5518 15.1123 10.8165 15.4107 10.8165 15.765C10.8165 16.1193 10.5518 16.4177 10.2 16.46Z"
+                fill="#828282"
+              />
+            </svg>
+          </div>
+          <p>Goals</p>
+        </li>
+      </ul>
+    </div>
+    <div class="projects">
+      <div class="title" (click)="onToggle()">
+        <h3>Projects</h3>
+        <img src="../../assets/drop-down.png" alt="" />
+      </div>
+      <div class="dropDown">
+        <ul [ngClass]="{ active: isProjectActive }">
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="4"
+              height="4"
+              viewBox="0 0 4 4"
+              fill="none"
+            >
+              <circle cx="2" cy="2" r="2" fill="#828282" />
+            </svg>
+            <p>Development</p>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="4"
+              height="4"
+              viewBox="0 0 4 4"
+              fill="none"
+            >
+              <circle cx="2" cy="2" r="2" fill="#828282" />
+            </svg>
+            <p>Marketing</p>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="4"
+              height="4"
+              viewBox="0 0 4 4"
+              fill="none"
+            >
+              <circle cx="2" cy="2" r="2" fill="#828282" />
+            </svg>
+            <p>Engineering</p>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="4"
+              height="4"
+              viewBox="0 0 4 4"
+              fill="none"
+            >
+              <circle cx="2" cy="2" r="2" fill="#828282" />
+            </svg>
+            <p>Engineering</p>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="4"
+              height="4"
+              viewBox="0 0 4 4"
+              fill="none"
+            >
+              <circle cx="2" cy="2" r="2" fill="#828282" />
+            </svg>
+            <p>Engineering</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="dashboard">
+    <div class="header">
+      <div class="humburger" (click)="onSidebarToggle()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="profile-detail">
+        <h3>Welcome back Jack!</h3>
+        <div
+          class="img"
+          (mouseenter)="onMouseEnter()"
+          (mouseleave)="onMouseLeave()"
+        >
+          <img src="../../assets/Profile icon.png" alt="" />
+        </div>
+        <div
+          class="drop-down"
+          [ngClass]="{ active: isProfileActive }"
+          (mouseenter)="onMouseEnter()"
+          (mouseleave)="onMouseLeave()"
+        >
+          <div class="drop-down-data">
+            <div class="box">
+              <img src="../../assets/update-profile.png" alt="" />
+              <p>Update Profile</p>
+            </div>
+            <div class="box" style="border-bottom: 0">
+              <img src="../../assets/logout.png" alt="" />
+              <p>Logout</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
